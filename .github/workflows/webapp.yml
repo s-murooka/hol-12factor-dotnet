@@ -55,6 +55,8 @@ jobs:
     needs: build
  # このenvironmentの設定がエラーを生じさせている可能性があるので、Federated credentialsのsubjectをrepo:s-murooka/hol-12factor-dotnet:environment:productionに変更してみた
 
+ # subscriptionidをtalentidに変更
+
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
