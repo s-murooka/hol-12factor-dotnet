@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - OIDC
   workflow_dispatch:
 
 permissions:
