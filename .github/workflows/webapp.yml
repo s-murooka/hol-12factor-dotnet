@@ -63,7 +63,7 @@ jobs:
  # webappに対する共同作成者ロールをアプリに追加
 
     environment:
-      name: 'main'
+      name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
