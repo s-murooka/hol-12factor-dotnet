@@ -56,12 +56,13 @@ jobs:
     needs: build
 
  # このenvironmentの設定がエラーを生じさせている可能性があるので、Federated credentialsのsubjectをrepo:s-murooka/hol-12factor-dotnet:environment:productionに変更
+ # 元はrepo:s-murooka/hol-12factor-dotnet:ref:refs/heads/main
  # どちらかというと、このbranch名の指定をmainにするのが正しい？
  # EntraIDに登録したアプリに対して、共同作成者権限を与えなければazure/login@v1でエラーが発生する？
  # →元に戻して、エラーメッセージの記録だけ行なって、この手順を諦める
 
     environment:
-      name: 'production'
+      name: 'main'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
