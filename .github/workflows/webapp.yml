@@ -61,6 +61,7 @@ jobs:
  # EntraIDに登録したアプリに対して、共同作成者権限を与えなければazure/login@v1でエラーが発生する？
  
  # webappに対する共同作成者ロールをアプリに追加
+ # deployへのレビュー要求を追加した
 
     environment:
       name: 'production'
